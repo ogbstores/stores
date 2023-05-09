@@ -1,0 +1,254 @@
+
+.cart{
+    font-size: 1.1rem;
+}
+
+.desc{
+    display: block;
+}
+
+.dropdown{
+    margin: auto;
+    text-align: end;
+}
+
+.hamburger{
+    padding: 0.5rem 1rem 1rem 1rem;
+    width: 5%;
+    font-size: 40px;
+    color: black;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+}
+
+.head{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+.header{
+    width: 100%;
+}
+
+.log{
+    display: none;
+    width: 50%;
+    text-align: end;
+}
+
+.logo{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.main-section{
+    position: relative;
+    display: inline-block;
+    background-color: lightgray;
+    align-content: center;
+    padding-top: 100px;
+    /* display: none; */
+}
+
+.nav-item{
+    margin-bottom: 1rem;
+}
+
+.product{
+    background-color: white;
+    width: 45%;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+
+.product-container{
+    padding-top: 2%;
+    margin: auto;
+    text-align: center;
+}
+
+.product-img{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.product-section{
+    /* background-color: aqua; */
+    margin: 0px auto;
+}
+
+.search{
+    display: inline-block;
+}
+
+.side-bar{
+    background-color: brown;
+    margin-left: auto;
+    display: none;
+}
+
+.side-navigation{
+    height:100vh;
+    width: 40%;
+    position: fixed;
+    margin-left: -500px;
+}
+
+.side-navigation.active{
+    margin-left: 0px;
+    transition: .5s linear;
+}
+
+.sign-in{
+    margin-right: 2px;
+    background-color: black;
+    color: white;
+}
+
+.sign-up{
+    margin-right: 2px;
+}
+
+.user-name{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+@media screen and (max-width: 600px){
+    .side-bar{
+    }
+    .side-navigation{
+
+        /* display: none !important; */
+    }
+    .log{
+    }
+    .menu{
+    }
+    .logo{
+    }
+}
+@media (min-width:640px){
+    .side-bar{
+        display: none;
+    }
+    .side-navigation{
+        width: 30%;
+    }
+    .log{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .product{
+        max-width: 30%;
+        margin-bottom: 2%;
+    }
+}
+@media (min-width:768px){
+    .side-bar{
+        display: none;
+    }
+    .log{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .user-name{
+        text-align: center;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .product{
+        width: 22%;
+    }
+    .side-navigation{
+        width: 25%;
+    }
+}
+@media (min-width:1024px){
+    .side-bar{
+        display: inline-block;
+    }
+    .hamburger{
+        display: none;
+    }
+    .side-navigation{
+        width: 20%;
+        margin-left: 0px;
+        position: fixed;
+    }
+    .log{
+        display: inline-block;
+        width: 48%;
+        float: right;
+        padding-top: 10px;
+    }
+    .logo{
+        text-align: center;
+        display: inline-block;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: var(--black);
+        margin-left: 8%;
+        width: 40%;
+    }
+    .product{
+        width: 24%;
+        margin-bottom: 1%;
+    }
+    .main-section{
+        width: 80%;
+        margin-left: 20%;
+    }
+}
+@media (min-width:1280px){
+    .side-bar{
+        display: inline-block;
+    }
+    .side-navigation{
+        width: 15%;
+        position: fixed;
+    }
+    .log{
+        display: inline-block;
+        float: right;
+        padding-top: 10px;
+
+    }
+    .logo{
+        text-align: right;
+        display: inline-block;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        width: 25%;
+        margin-left: 1%;
+    }
+    .product{
+        width: 19%;
+    }
+    .main-section{
+        width: 85%;
+        margin-left: 15%;
+    }
+}
