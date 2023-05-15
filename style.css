@@ -1,3 +1,10 @@
+.buy{
+    border: none;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    background-color: #0070ff;
+    border-radius: 3px;
+}
 
 .cart{
     font-size: 1.1rem;
@@ -5,6 +12,11 @@
 
 .desc{
     display: block;
+    padding-left: 1rem;
+}
+
+.price {
+    padding-left: 1rem;
 }
 
 .dropdown{
@@ -67,6 +79,7 @@
     display: inline-block;
     border-radius: 5px;
     margin-bottom: 3%;
+    text-align: left;
 }
 
 .product-container{
@@ -159,6 +172,7 @@
     .product{
         max-width: 30%;
         margin-bottom: 2%;
+        font-size: 1rem;
     }
 }
 @media (min-width:768px){
@@ -181,6 +195,7 @@
     }
     .product{
         width: 22%;
+        font-size: 1.2rem;
     }
     .side-navigation{
         width: 25%;
@@ -216,6 +231,7 @@
     .product{
         width: 24%;
         margin-bottom: 1%;
+        font-size: 1.2rem;
     }
     .main-section{
         width: 80%;
