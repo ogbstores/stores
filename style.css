@@ -1,9 +1,12 @@
+@import 'animate.css';
+
 .buy{
     border: none;
     margin-left: 1rem;
     margin-bottom: 1rem;
-    background-color: #0d6efd;
+    background-color: #41424c;
     border-radius: 3px;
+    color: white;
 }
 
 .cart{
@@ -22,6 +25,11 @@
 .dropdown{
     margin: auto;
     text-align: end;
+}
+
+.dropdown.active{
+    animation: fadeInLeft;
+    animation-duration: 2s;
 }
 
 .hamburger{
@@ -66,7 +74,6 @@
     background-color: lightgray;
     align-content: center;
     padding-top: 100px;
-    /* display: none; */
 }
 
 .nav-item{
@@ -96,7 +103,6 @@
 }
 
 .product-section{
-    /* background-color: aqua; */
     margin: 0px auto;
 }
 
@@ -122,6 +128,11 @@
     transition: .5s linear;
 }
 
+.element.active{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
 .sign-in{
     margin-right: 2px;
     background-color: black;
@@ -135,6 +146,11 @@
 .user-name{
     text-align: center;
     padding-top: 3rem;
+}
+
+.user-name.active{
+    animation: fadeInLeft;
+    animation-duration: 2s;
 }
 
 @media screen and (max-width: 600px){

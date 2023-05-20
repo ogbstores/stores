@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
@@ -20,48 +21,47 @@
 
         <div class="side-navigation d-flex flex-column flex-shrink-0 p-3 text-bg-dark">
             <span class="fs-4 user-name">Hello, Adika</span>
-            </a>
             <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
-                Home
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-white">
-                Dashboard
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-white">
-                Customers
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-white">
-                Products
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-white">
-                Cart
-                </a>
-            </li>
+            <ul class="element nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">
+                    Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/dashboard.html" class="nav-link text-white">
+                    Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">
+                    Customers
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">
+                    Products
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">
+                    Cart
+                    </a>
+                </li>
             </ul>
             <hr>
             <div class="dropdown">
-            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                <strong>mdo</strong>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>mdo</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
             </div>
         </div>
 
@@ -93,7 +93,7 @@
 <!-- ====================================================  HEADER-SECTION END========================================================================= -->
     
     <!-- ====================================================  MAIN-SECTION START========================================================================= -->
-    <section class="main-section">
+    <section class="home main-section">
         <!-- ==========PRODUCTS=========== -->
         <div class="product-section">
             <div class="product-container">
@@ -159,19 +159,74 @@
                 </div>
             </div>
         </div>
-        <!-- ==========SIDE BAR=========== -->
-        <div class="side-bar col-1 col-md-2">
-            <ul>
-                <li>Category 1</li>
-                <li>Category 2</li>
-                <li>Category 3</li>
-                <li>Category 4</li>
-                <li>Category 5</li>
-                <li>Category 6</li>
-                <li>Category 7</li>
-            </ul>
-        </div>
 
+    </section>
+
+    <section class="main-section">
+<!-- ====================== HOME ============================= -->
+        <div class="product-section">
+            <div class="product-container">
+                <div class="product">
+                    <img class="product-img" src="./assets/pic.jpg" alt="">
+                    <span class="desc">Casual Round-Neck</span>
+                    <span class="price">1000</span>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./assets/pic.jpg" alt="">
+                    <span class="desc">Casual Round-Neck</span>
+                    <span class="price">1000</span>
+                    <div><button class="buy">Add to cart</button></div>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./assets/pic.jpg" alt="">
+                    <span class="desc">Casual Round-Neck</span>
+                    <span class="price">1000</span>
+                    <div><button class="buy">Add to cart</button></div>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./assets/pic.jpg" alt="">
+                    <span class="desc">Casual Round-Neck</span>
+                    <span class="price">1000</span>
+                    <div><button class="buy">Add to cart</button></div>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./assets/pic.jpg" alt="">
+                    <span class="desc">Casual Round-Neck</span>
+                    <span class="price">1000</span>
+                    <div><button class="buy">Add to cart</button></div>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./assets/pic.jpg" alt="">
+                    <span class="desc">Casual Round-Neck</span>
+                    <span class="price">1000</span>
+                    <div><button class="buy">Add to cart</button></div>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./assets/pic.jpg" alt="">
+                    <span class="desc">Casual Round-Neck</span>
+                    <span class="price">1000</span>
+                    <div><button class="buy">Add to cart</button></div>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./assets/pic.jpg" alt="">
+                    <span class="desc">Casual Round-Neck</span>
+                    <span class="price">1000</span>
+                    <div><button class="buy">Add to cart</button></div>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./assets/pic.jpg" alt="">
+                    <span class="desc">Casual Round-Neck</span>
+                    <span class="price">1000</span>
+                    <div><button class="buy">Add to cart</button></div>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="./assets/pic.jpg" alt="">
+                    <span class="desc">Casual Round-Neck</span>
+                    <span class="price">1000</span>
+                    <div><button class="buy">Add to cart</button></div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- ====================================================  MAIN-SECTION END========================================================================= -->
 
