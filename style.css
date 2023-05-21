@@ -1,4 +1,6 @@
-@import 'animate.css';
+body{
+    overflow: hidden;
+}
 
 .buy{
     border: none;
@@ -29,7 +31,7 @@
 
 .dropdown.active{
     animation: fadeInLeft;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 .hamburger{
@@ -37,17 +39,16 @@
     width: 5%;
     font-size: 40px;
     color: black;
-    z-index: 1;
     position: absolute;
     cursor: pointer;
+    z-index: 20;
 }
 
 .head{
-    display: flex;
     position: fixed;
     width: 100%;
-    z-index: 1000;
     background-color: white;
+    z-index: 10;
 }
 
 .header{
@@ -78,6 +79,14 @@
 
 .nav-item{
     margin-bottom: 1rem;
+}
+
+#loader{
+    background: url(./assets/load.gif) no-repeat center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
 }
 
 .product{
@@ -130,7 +139,7 @@
 
 .element.active{
     animation: fadeInLeft;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 .sign-in{
@@ -150,7 +159,7 @@
 
 .user-name.active{
     animation: fadeInLeft;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 @media screen and (max-width: 600px){
