@@ -5,6 +5,9 @@ let loader = document.getElementById('loader');
 let element = document.querySelector('.element');
 let username = document.querySelector('.user-name');
 let drop = document.querySelector('.dropdown');
+let popUp = document.getElementById('pop-up');
+let popBox = document.querySelector('.pop-box');
+var productImg = document.querySelectorAll('.product-img');
 
 
 document.querySelector('.hamburger').onclick = () => {
@@ -21,4 +24,15 @@ document.querySelector('.hamburger').onclick = () => {
 window.addEventListener("load", function(){
     loader.style.display = "none";
     body.style.overflow = "scroll"
+})
+
+for(let i = 0; i < productImg.length; i++) {
+    productImg[i].addEventListener('click', function(){
+        popUp.style.display = "block";
+        popBox.style.backgroundImage = `url(./assets/pic.jpg)`;
+    })
+}
+
+popUp.addEventListener('click', function(){
+    this.style.display = "none";
 })
