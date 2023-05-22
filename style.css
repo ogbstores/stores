@@ -7,7 +7,7 @@ ul{
 }
 
 .bi-caret-down-fill{
-    font-size: 1rem;
+    text-align: right;
 }
 
 .buy{
@@ -95,8 +95,8 @@ ul{
 }
 
 .mini .active{
-    animation: fadeInDown;
-    animation-duration: 1s;
+    transition: 0.5s linear;
+    display: block;
 }
 
 .mini li{
