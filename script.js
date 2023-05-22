@@ -8,6 +8,8 @@ let drop = document.querySelector('.dropdown');
 let popUp = document.getElementById('pop-up');
 let popBox = document.querySelector('.pop-box');
 var productImg = document.querySelectorAll('.product-img');
+let acct = document.querySelector('.account');
+let mini = document.querySelector('.mini')
 
 
 document.querySelector('.hamburger').onclick = () => {
@@ -36,3 +38,7 @@ for(let i = 0; i < productImg.length; i++) {
 popUp.addEventListener('click', function(){
     this.style.display = "none";
 })
+
+document.querySelector(".account").onclick = () => {
+    mini.style.display = mini.style.display === "block" ? "none" : "block";
+}

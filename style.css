@@ -2,6 +2,14 @@ body{
     overflow: hidden;
 }
 
+ul{
+    list-style-type: none;
+}
+
+.bi-caret-down-fill{
+    text-align: right;
+}
+
 .buy{
     border: none;
     margin-left: 1rem;
@@ -77,6 +85,24 @@ body{
     padding-top: 100px;
 }
 
+.mini{
+    transition: 0.5s linear;
+    font-size: 1.1rem;
+    -webkit-box-shadow: 0 10px 6px -6px #333;
+    -moz-box-shadow: 0 10px 6px -6px #333;
+    box-shadow: 0 10px 6px -6px #333;
+    display: none;
+}
+
+.mini .active{
+    transition: 0.5s linear;
+    display: block;
+}
+
+.mini li{
+    cursor: pointer;
+}
+
 .nav-item{
     margin-bottom: 1rem;
 }
@@ -119,6 +145,10 @@ body{
 #prev-btn{
     border-right: 40px solid grey;
     left: -50px;
+}
+
+.nav-link{
+    font-size: 1.3rem;
 }
 
 #next-btn{
