@@ -9,7 +9,8 @@ let popUp = document.getElementById('pop-up');
 let popBox = document.querySelector('.pop-box');
 var productImg = document.querySelectorAll('.product-img');
 let acct = document.querySelector('.account');
-let mini = document.querySelector('.mini')
+let mini = document.querySelector('.mini');
+let caret = document.querySelector('.caret')
 
 
 document.querySelector('.hamburger').onclick = () => {
@@ -41,4 +42,5 @@ popUp.addEventListener('click', function(){
 
 document.querySelector(".account").onclick = () => {
     mini.style.display = mini.style.display === "block" ? "none" : "block";
+    caret.classList.toggle('active');
 }
